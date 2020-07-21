@@ -184,5 +184,9 @@ while running:
             pygame.quit()
             sys.exit()
 
+        if events.type == pygame.KEYDOWN:
+            if events.key == pygame.K_ESCAPE:
+                Menu(menu, False, score=0)    
+
     pygame.display.flip()
 
